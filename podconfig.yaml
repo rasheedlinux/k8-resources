@@ -11,14 +11,5 @@ spec:
     image: nginx:1.14.2
     ports:
     - containerPort: 80
-    env:
-    - name: color.good
-     valueFrom:
-            configMapKeyRef:
-              name: expensevalues
-              key: color.good
-    - name: color.bad
-       valueFrom:
-            configMapKeyRef:
-              name: expensevalues
-              key: color.bad
+    configMap:
+      name: expensevalues
