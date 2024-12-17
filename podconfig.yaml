@@ -11,5 +11,7 @@ spec:
     image: nginx:1.14.2
     ports:
     - containerPort: 80
-    configMap:
-      name: expensevalues
+    envFrom:
+    - configMapRef:
+       name: expensevalues
+       
