@@ -17,6 +17,6 @@ spec:
             configMapKeyRef:
               name: expensevalues
     - name: color.bad
-      valueFrom:
+       valueFrom:
             configMapKeyRef:
               name: expensevalues
